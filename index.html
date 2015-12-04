@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="app/assets/stylesheets/styles.css">
+  <title>Ulysses Wells</title>
+</head>
+<body ng-controller="PhotosCtrl as photo">
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-brand-centered">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+         <div class="navbar-brand navbar-brand-centered">Ulysses Wells</div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-brand-centered">
+      <ul class="nav navbar-nav navbar-center">
+                    <li>
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" ui-sref="home">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" ui-sref="news">News</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" ui-sref="band">Band</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" ui-sref="tour">Tour</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" ui-sref="music">Music</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Videos</a>
+                    </li>
+                    <li>
+                    </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+  </div>
+
+  <ul class="social-bar">
+    <div class="row">
+      <div class="col-xs-2 col-sm-3">
+        <li><a href="https://www.facebook.com/UlyWells/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      </div>
+
+      <div class="col-xs-2 col-sm-3">
+      <li><a href="https://twitter.com/ulysses_wells" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      </div>
+
+      <div class="col-xs-2 col-sm-3">
+      <li><a href="" target="_blank"><i class="fa fa-youtube"></i></a></li>
+      </div>
+      <div class="col-xs-2 col-sm-3">
+        <li><a href="https://www.instagram.com/ulysses_wells/" target="_blank"><i class="fa fa-instagram"></a></i></li>
+      </div>
+      <li><a id="follow-button" class="btn" title="Follow @mumfordandsons on Twitter" href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.mumfordandsons.com%2Fhome%2F&amp;ref_src=twsrc%5Etfw&amp;region=follow_link&amp;screen_name=mumfordandsons&amp;tw_p=followbutton"><i></i><span class="label" id="l">Follow <b>@mumfordandsons</b></span></a></li>
+    </div>
+  </ul>
+
+
+<div ui-view></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
+<script src="app/app.js"></script>
+</body>
+</html>
