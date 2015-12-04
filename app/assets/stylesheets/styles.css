@@ -5,7 +5,7 @@ html {
   min-height: 100%; }
 
 body {
-  background: mintcream;
+  background: black;
   text-align: center;
   margin-bottom: 60px; }
 
@@ -38,7 +38,7 @@ body {
     padding: 10px;
     position: relative;
     margin: 0 auto;
-    width: 100px;
+    width: 100%;
     right: 20px; }
   .social-bar i {
     padding-left: 1px;
@@ -47,8 +47,23 @@ body {
     transition: color 1s;
     color: #4886da; }
 
+@media (max-width: 608px) {
+  .social-bar {
+    height: 80px; } }
+
 .page-heading {
-  margin-top: 50px; }
+  margin-top: 50px;
+  color: white; }
+
+.news-feed li {
+  display: block; }
+  .news-feed li img {
+    width: 100%;
+    padding: 0;
+    min-width: 320px;
+    margin: 0;
+    max-height: 300px;
+    height: auto; }
 
 @media (min-width: 768px) {
   .page-heading {

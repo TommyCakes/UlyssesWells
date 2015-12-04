@@ -11,7 +11,8 @@ angular.module('App', ['ui.router', 'ngResource'])
     })
     .state('news', {
      url: '/news',
-     templateUrl: 'app/states/news.html'
+     templateUrl: 'app/states/news.html',
+     controller:'PhotosCtrl as photo'
    })
    .state('band', {
       url: "/band",
