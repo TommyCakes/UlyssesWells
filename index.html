@@ -21,7 +21,7 @@
          <div class="navbar-brand navbar-brand-centered">Ulysses Wells</div>
       </div>
       <div class="collapse navbar-collapse" id="navbar-brand-centered">
-      <ul class="nav navbar-nav navbar-center">
+      <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="#page-top"></a>
                     </li>
@@ -29,14 +29,14 @@
                         <a class="page-scroll" ui-sref="home">Home</a>
                     </li>
                     <li>
+                        <a class="page-scroll" ui-sref="gallery">Gallery</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" ui-sref="news">News</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" ui-sref="band">Band</a>
-                    </li>
-                    <li>
+                    <!-- <li>
                         <a class="page-scroll" ui-sref="tour">Tour</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a class="page-scroll" ui-sref="contact">Contact</a>
                     </li>
@@ -49,27 +49,23 @@
   </div>
   </div>
 
-  <ul class="social-bar">
-    <div class="row">
-      <div class="col-xs-2 col-sm-3">
-        <li><a href="https://www.facebook.com/UlyWells/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
-      </div>
-
-      <div class="col-xs-2 col-sm-3">
-      <li><a href="https://twitter.com/ulysses_wells" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      </div>
-
-      <div class="col-xs-2 col-sm-3">
-      <li><a href="" target="_blank"><i class="fa fa-youtube"></i></a></li>
-      </div>
-      <div class="col-xs-2 col-sm-3">
-        <li><a href="https://www.instagram.com/ulysses_wells/" target="_blank"><i class="fa fa-instagram"></a></i></li>
-      </div>
-    </div>
-  </ul>
-
-
 <div ui-view></div>
+
+
+<div class="footer">
+  <ul class="social">
+    <p>
+        <li><a href="https://www.facebook.com/UlyWells/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/ulysses_wells" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <!-- <div class="col-xs-2 col-sm-3">
+      <li><a href="" target="_blank"><i class="fa fa-youtube"></i></a></li>
+      </div> -->
+        <li><a href="https://www.instagram.com/ulysses_wells/" target="_blank"><i class="fa fa-instagram"></a></i></li>
+    </p>
+  </ul>
+      <p>&copy Tom Warhurst 2016</p>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>

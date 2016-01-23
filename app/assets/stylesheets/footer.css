@@ -1,0 +1,23 @@
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  background: #161616;
+  height: 10px;
+  position: relative;
+  bottom: 10px; }
+  .footer .social {
+    display: inline; }
+    .footer .social li {
+      display: inline-block;
+      padding-left: 10px; }
+    .footer .social i {
+      font-size: 2em;
+      color: grey; }
+    .footer .social i:hover {
+      transition: color 1s;
+      color: #4886da; }
+  .footer p {
+    margin-top: 20px;
+    font-size: 1em;
+    font-family: helvetica;
+    color: grey; }

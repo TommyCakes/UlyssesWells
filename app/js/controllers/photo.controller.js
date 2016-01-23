@@ -12,7 +12,8 @@ angular.module('App')
   var url = "https://api.instagram.com/v1/users/self/media/recent/?access_token=" + accessToken
   var request = {
     callback: 'JSON_CALLBACK',
-    client_id: 'f5660bbde18946eda38e1b2b2da56266',
+    // client_id: 'f5660bbde18946eda38e1b2b2da56266',
+    client_id: 'fc9f7c6daadf469bbd1decba087f0f44'
   };
 
   $http({

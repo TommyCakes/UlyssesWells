@@ -9,19 +9,19 @@ angular.module('App', ['ui.router', 'ngResource'])
       url: "/home",
       templateUrl: 'app/states/home.html',
     })
-    .state('news', {
-     url: '/news',
-     templateUrl: 'app/states/news.html',
+    .state('gallery', {
+     url: '/gallery',
+     templateUrl: 'app/states/gallery.html',
      controller:'PhotosCtrl as photo'
    })
-   .state('band', {
-      url: "/band",
-      templateUrl: 'app/states/band.html'
+   .state('news', {
+      url: "/news",
+      templateUrl: 'app/states/news.html'
     })
-    .state('tour', {
-      url: "/tour",
-      templateUrl: 'app/states/tour.html'
-    })
+    // .state('tour', {
+    //   url: "/tour",
+    //   templateUrl: 'app/states/tour.html'
+    // })
     .state('contact', {
       url: "/contact",
       templateUrl: 'app/states/contact.html'
