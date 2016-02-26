@@ -2,12 +2,20 @@
   <div class="page-heading">
     <h1>Gallery</h1>
   </div>
-<!-- Will be pulling pictures from artists instagram -->
-<div class="row">
-      <li ng-repeat="p in photo.results">
-        <div class="col-xs-12 col-sm-4">
-        <img class="img-responsive" ng-src="{{p.images.standard_resolution.url}}"
-    </li>
+
+<!-- Pulls pictures from artists instagram -->
+<div class="container">
+  <div ng-repeat="p in photo.results">
+    <div class="col-xs-12 col-sm-4">
+        <li >
+          <a href="{{p.link}}" target="_blank">
+            <img class="img-responsive" ng-src="{{p.images.standard_resolution.url}}"
+          </a>
+          <div class="likes">
+            <p><i class="fa fa-heart-o fa-2x"></i>{{p.likes.count}}</p>
+          </div>
+      </li>
+    </div>
   </div>
 </div>
 </div>

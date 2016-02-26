@@ -1,0 +1,22 @@
+.nav {
+  margin: 0 auto;
+  float: center;
+  line-height: 25px;
+  width: 100%;
+  z-index: 999;
+  font-family: 'Archivo Narrow', sans-serif; }
+  .nav ul {
+    display: block;
+    list-style: none; }
+    .nav ul li {
+      display: inline-block; }
+      .nav ul li a {
+        color: white;
+        font-size: 1.1em;
+        text-decoration: none;
+        padding: 10px 10px;
+        transition: font-size 0.2s;
+        transition: padding 1s; }
+  .nav .active {
+    border-bottom: red 1px solid;
+    padding: 10px 15px; }

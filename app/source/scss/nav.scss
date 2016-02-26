@@ -1,0 +1,36 @@
+.nav {
+  //position: absolute;;
+  margin:0 auto;
+  float:center;
+  //right:20px;
+  //margin-top:100px;
+  //bottom: 55px;
+  line-height: 25px;
+  width:100%;
+  z-index:999;
+  font-family: 'Archivo Narrow', sans-serif;
+  ul {
+    display:block;
+    list-style: none;
+    li {
+      display:inline-block;
+        a {
+        color:white;
+        font-size: 1.1em;
+        text-decoration: none;
+        //padding-bottom:1px;
+        padding: 10px 10px;
+        transition: font-size 0.2s;
+        transition: padding 1s;
+        &:hover {
+          //border-bottom:white 1px solid;
+          //font-size: 1.2em;
+        }
+      }
+    }
+  }
+  .active {
+        border-bottom:red 1px solid;
+        padding: 10px 15px;
+  }
+}
