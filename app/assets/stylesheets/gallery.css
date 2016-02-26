@@ -1,0 +1,21 @@
+.gallery {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: 500;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+  .gallery li {
+    list-style: none; }
+  .gallery img {
+    width: 100%;
+    transition: opacity 1s; }
+    .gallery img:hover {
+      opacity: 0.6; }
+  .gallery .likes {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 20px;
+    transition: color 1s;
+    color: white; }
+    .gallery .likes:hover {
+      color: red; }

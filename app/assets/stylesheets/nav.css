@@ -16,7 +16,7 @@
         text-decoration: none;
         padding: 10px 10px;
         transition: font-size 0.2s;
-        transition: padding 1s; }
+        transition: padding 0.5s; }
   .nav .active {
     border-bottom: red 1px solid;
-    padding: 10px 15px; }
+    padding: 10px 12px; }

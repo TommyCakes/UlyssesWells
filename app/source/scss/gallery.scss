@@ -1,0 +1,31 @@
+.gallery {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: 500;
+  width:100%;
+  margin: 0 auto;
+  position:relative;
+  li { list-style: none;}
+  img {
+    width:100%;
+    transition: opacity 1s;
+    //padding:10px 0px;
+    //height:auto;
+    //max-height:200px;
+    //float:left;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  .likes {
+    position:absolute;
+    // top:150px;
+    margin-top:-50px;
+    margin-left:20px;
+    transition: color 1s;
+    // left:20px;
+    color:white;
+    &:hover {
+      color:red;
+    }
+  }
+}
