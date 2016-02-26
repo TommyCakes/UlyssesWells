@@ -1,4 +1,4 @@
-angular.module('App', ['ui.router', 'ngResource', 'ngAnimate'])
+angular.module('App', ['ui.router'])
 
 
 
