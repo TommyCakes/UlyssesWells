@@ -18,11 +18,27 @@
   <div class="push-small"></div>
   <div class="nav">
     <ul>
-      <li><a ui-sref="home" ui-sref-active="active">HOME</a></li>
-      <li><a ui-sref="bio" ui-sref-active="active">BIO</a></li>
-      <li><a ui-sref="gallery" ui-sref-active="active">GALLERY</a></li>
-      <li><a ui-sref="news" ui-sref-active="active">NEWS</a></li>
-      <li><a ui-sref="contact" ui-sref-active="active">CONTACT</a></li>
+      <div class="row visible-xs" >
+        <div class="col-xs-3">
+          <li><a ui-sref="home" ui-sref-active="active">HOME</a></li>
+        </div>
+        <div class="col-xs-3">
+          <li><a ui-sref="bio" ui-sref-active="active">ABOUT</a></li>
+        </div>
+        <div class="col-xs-3">
+          <li><a ui-sref="gallery" ui-sref-active="active">GALLERY</a></li>
+        </div>
+        <div class="col-xs-3">
+          <li><a ui-sref="contact" ui-sref-active="active">CONTACT</a></li>
+        </div>
+      </div>
+      <div class="hidden-xs ">
+        <li><a ui-sref="home" ui-sref-active="active">HOME</a></li>
+        <li><a ui-sref="bio" ui-sref-active="active">BIOGRAPHY</a></li>
+        <li><a ui-sref="gallery" ui-sref-active="active">GALLERY</a></li>
+        <!-- <li><a ui-sref="news" ui-sref-active="active">NEWS</a></li> -->
+        <li><a ui-sref="contact" ui-sref-active="active">CONTACT</a></li>
+      </div>
     </ul>
   </div>
         <div class="push-large"></div>

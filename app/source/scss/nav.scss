@@ -1,3 +1,19 @@
+@media (max-width: 700px) {
+  .nav {
+  // margin:0 auto;
+  position: relative;
+  left:-6%;
+  font-size: 1em;
+    li {
+      .active {
+            border-bottom:none;
+            padding: 0px;
+      }
+    }
+  }
+}
+
+
 .nav {
   //position: absolute;;
   margin:0 auto;
