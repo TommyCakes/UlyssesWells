@@ -4,7 +4,10 @@ body {
   background: #2A2627;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: white; }
+  color: white;
+  margin-top: -30px; }
+  body .push-small {
+    height: 2em; }
 
 @media (max-width: 700px) {
   .nav {
@@ -16,8 +19,11 @@ body {
       padding: 0px; } }
 
 .nav {
+  position: absolute;
   margin: 0 auto;
   float: center;
+  right: 30px;
+  top: 10px;
   line-height: 25px;
   width: 100%;
   z-index: 999;
@@ -44,7 +50,7 @@ body {
   max-height: 100vh; }
   .main-image img {
     height: 80vh;
-    width: 55%; }
+    width: 50%; }
 
 .logo {
   width: 100%;
@@ -61,7 +67,7 @@ body {
 
 @media screen and (max-width: 700px) {
   .main-image {
-    width: 110%;
+    width: 90%;
     margin: 0 auto;
     overflow: hidden; }
     .main-image img {
@@ -99,7 +105,7 @@ body {
   width: 100%; }
   .information img {
     width: 750px;
-    height: 405px; }
+    height: 350px; }
 
 .bio {
   width: 100%; }
@@ -115,14 +121,14 @@ body {
   margin: 0 auto -4em; }
 
 .footer, .push-large {
-  height: 4em; }
+  height: 3em; }
   .footer .social, .push-large .social {
     display: inline; }
     .footer .social li, .push-large .social li {
       display: inline-block;
       position: relative;
       top: -10px;
-      padding: 10px 50px;
+      padding: 5px 50px;
       z-index: 1010; }
     .footer .social i, .push-large .social i {
       font-size: 2em;

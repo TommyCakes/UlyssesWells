@@ -8,8 +8,11 @@
       padding: 0px; } }
 
 .nav {
+  position: absolute;
   margin: 0 auto;
   float: center;
+  right: 30px;
+  top: 10px;
   line-height: 25px;
   width: 100%;
   z-index: 999;

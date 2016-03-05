@@ -9,6 +9,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   color:white;
   //overflow:hidden;
+  margin-top:-30px;
+  .push-small {
+    height:2em;
+  }
 }
 
 @import 'nav';
@@ -19,7 +23,7 @@ body {
   max-height:100vh;
   img {
     height:80vh;
-    width:55%;
+    width:50%;
   }
 }
 .logo {
@@ -41,7 +45,7 @@ body {
 
 @media screen and (max-width:700px) {
   .main-image {
-    width:110%;
+    width:90%;
     margin:0 auto;
     overflow:hidden;
     img {
@@ -64,7 +68,7 @@ body {
   width:100%;
   img {
     width:750px;
-    height:405px;
+    height:350px;
   }
 }
 
