@@ -98,7 +98,15 @@ body {
 .information {
   width: 100%; }
   .information img {
-    width: 100%; }
+    width: 750px;
+    height: 405px; }
+
+.bio {
+  width: 100%; }
+  .bio .about {
+    width: 75%;
+    line-height: 40px;
+    margin: 0 auto; }
 
 .wrapper {
   min-height: 100%;
