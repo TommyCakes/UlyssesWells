@@ -1,17 +1,18 @@
 @media (max-width: 700px) {
   .nav {
     position: relative;
-    left: -6%;
+    left: -10px;
     font-size: 1em; }
-    .nav li .active {
-      border-bottom: none;
-      padding: 0px; } }
+    .nav ul li {
+      padding: 1px -50px; }
+      .nav ul li a.active {
+        border-bottom: none;
+        padding: 0px; } }
 
 .nav {
   position: absolute;
   margin: 0 auto;
   float: center;
-  right: 30px;
   top: 10px;
   line-height: 25px;
   width: 100%;
@@ -26,9 +27,9 @@
         color: white;
         font-size: 1.1em;
         text-decoration: none;
-        padding: 10px 10px;
+        padding: 10px 30px;
         transition: font-size 0.2s;
         transition: padding 0.5s; }
-  .nav .active {
-    border-bottom: red 1px solid;
-    padding: 10px 12px; }
+      .nav ul li .active {
+        border-bottom: red 1px solid;
+        padding: 10px 13px; }
