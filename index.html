@@ -14,30 +14,39 @@
   <div class="nav">
     <ul>
       <div class="row visible-xs" >
-        <div class="col-xs-3">
-          <li><a ui-sref="home" ui-sref-active="active">HOME</a></li>
+        <div class="col-xs-2">
+          <li><a class="home" ui-sref="home" ui-sref-active="active">HOME</a></li>
         </div>
-        <div class="col-xs-3">
-          <li><a ui-sref="bio" ui-sref-active="active">ABOUT</a></li>
+        <div class="col-xs-2">
+          <li><a class="bio" ui-sref="bio" ui-sref-active="active">ABOUT</a></li>
         </div>
-        <div class="col-xs-3">
-          <li><a ui-sref="gallery" ui-sref-active="active">GALLERY</a></li>
+        <div class="col-xs-2">
+          <li><a class="bio" ui-sref="gallery" ui-sref-active="active">GALLERY</a></li>
         </div>
-        <div class="col-xs-3">
-          <li><a ui-sref="contact" ui-sref-active="active">CONTACT</a></li>
+        <div class="col-xs-2">
+          <li><a class="contact" ui-sref="contact" ui-sref-active="active">CONTACT</a></li>
         </div>
       </div>
-      <div class="hidden-xs ">
-        <li><a ui-sref="home" ui-sref-active="active">HOME</a></li>
-        <li><a ui-sref="bio" ui-sref-active="active">BIOGRAPHY</a></li>
-        <li><a ui-sref="gallery" ui-sref-active="active">GALLERY</a></li>
-        <!-- <li><a ui-sref="news" ui-sref-active="active">NEWS</a></li> -->
-        <li><a ui-sref="contact" ui-sref-active="active">CONTACT</a></li>
+      <div class="row hidden-xs ">
+        <div class="col-xs-3">
+          <li><a class="home" ui-sref="home" ui-sref-active="active">HOME</a></li>
+        </div>
+        <div class="col-xs-3">
+          <li><a class="bio" ui-sref="bio" ui-sref-active="active">ABOUT</a></li>
+        </div>
+        <div class="col-xs-3">
+          <li><a class="bio" ui-sref="gallery" ui-sref-active="active">GALLERY</a></li>
+        </div>
+        <div class="col-xs-3">
+          <li><a class="contact" ui-sref="contact" ui-sref-active="active">CONTACT</a></li>
+        </div>
       </div>
     </ul>
+        <section id="top"></section>
   </div>
 
     <div class="push-small"></div>
+    <section id="mid"></section>
 <div ui-view></div>
 
 <div class="wrapper">
@@ -56,6 +65,7 @@
             </a>
         </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 <script src="angular.min.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>

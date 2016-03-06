@@ -28,15 +28,22 @@ body {
 .information {
   width:100%;
   img {
-    width:750px;
-    height:350px;
+    width:80%;
+    height:400px;
+  }
+  a {
+    color:white;
+    text-decoration:none;
+    &:hover {
+      color:#d3d3d3;
+    }
   }
 }
 
 .bio {
   width:100%;
   .about {
-    width:75%;
+    width:65%;
     line-height:40px;
     margin:0 auto;
   }

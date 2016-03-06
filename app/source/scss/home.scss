@@ -3,9 +3,10 @@
   height:100%;
   max-height:100vh;
   animation: show 3s;
+  z-index:999;
   img {
     height:80vh;
-    width:50%;
+    width:40%;
   }
 }
 .logo {
