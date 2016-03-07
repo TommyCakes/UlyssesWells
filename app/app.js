@@ -16,8 +16,7 @@ angular.module('App', ['ui.router'])
     })
     .state('gallery', {
       url: '/gallery',
-      templateUrl: 'app/states/gallery.html',
-      controller: 'PhotoCtrl as photo'
+      templateUrl: 'app/states/gallery.html'
     })
     .state('news', {
       url: "/news",
@@ -25,8 +24,7 @@ angular.module('App', ['ui.router'])
     })
     .state('contact', {
       url: "/contact",
-      templateUrl: 'app/states/contact.html',
-      controller: 'PhotoCtrl as photo'
+      templateUrl: 'app/states/contact.html'
     })
   })
 

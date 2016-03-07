@@ -1,12 +1,13 @@
 @media (max-width: 700px) {
   .nav {
-      //position: absolute;
+      position: absolute;
       font-size: 1em;
+      right:7px;
       ul {
+        padding:0px 15px;
          li {
-           padding:10px 30px;
-           padding-left:10px;
-           margin-left:60px;
+           //padding:10px 30px;
+           //margin-left:60px;
            a.active {
               border-bottom:none;
               padding: 0px;
@@ -16,9 +17,12 @@
   }
 }
 
+@media (min-width: 700px) {
+  .nav {
+    right:30px;
+  }
+}
 .nav {
-  //position: absolute;
-  left:0px;
   position: fixed;
   margin:0 auto;
   float:center;

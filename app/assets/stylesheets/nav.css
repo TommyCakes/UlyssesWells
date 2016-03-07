@@ -1,16 +1,19 @@
 @media (max-width: 700px) {
   .nav {
-    font-size: 1em; }
-    .nav ul li {
-      padding: 10px 30px;
-      padding-left: 10px;
-      margin-left: 60px; }
+    position: absolute;
+    font-size: 1em;
+    right: 7px; }
+    .nav ul {
+      padding: 0px 15px; }
       .nav ul li a.active {
         border-bottom: none;
         padding: 0px; } }
 
+@media (min-width: 700px) {
+  .nav {
+    right: 30px; } }
+
 .nav {
-  left: 0px;
   position: fixed;
   margin: 0 auto;
   float: center;
