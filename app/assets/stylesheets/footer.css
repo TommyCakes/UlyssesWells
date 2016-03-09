@@ -27,7 +27,8 @@
       position: relative;
       top: -10px;
       padding: 5px 50px;
-      z-index: 1010; }
+      z-index: 1010;
+      left: -5px; }
     .footer .social i, .push-large .social i {
       font-size: 2em;
       color: grey; }
@@ -53,5 +54,5 @@
 @media (max-width: 700px) {
   .footer .social li {
     top: -10px;
-    left: 5px;
+    left: -20px;
     padding: 0px 34px; } }

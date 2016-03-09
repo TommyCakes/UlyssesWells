@@ -10,7 +10,7 @@
         padding: 0px; }
       .nav ul #logo {
         position: absolute;
-        margin: -15px 10px 20px -18px;
+        margin: 8px 10px 20px -18px;
         width: 100%; }
         .nav ul #logo img {
           width: 60px; } }
@@ -46,7 +46,8 @@
         padding: 1px 13px; }
   .nav #logo {
     position: absolute;
-    margin: 4px 10px 1px -23px;
-    width: 100%; }
+    margin: 4px 10px 1px -25px;
+    width: 100%;
+    top: -10px; }
     .nav #logo img {
       width: 120px; }

@@ -24,7 +24,7 @@ body {
         padding: 0px; }
       .nav ul #logo {
         position: absolute;
-        margin: -15px 10px 20px -18px;
+        margin: 8px 10px 20px -18px;
         width: 100%; }
         .nav ul #logo img {
           width: 60px; } }
@@ -60,8 +60,9 @@ body {
         padding: 1px 13px; }
   .nav #logo {
     position: absolute;
-    margin: 4px 10px 1px -23px;
-    width: 100%; }
+    margin: 4px 10px 1px -25px;
+    width: 100%;
+    top: -10px; }
     .nav #logo img {
       width: 120px; }
 
@@ -89,11 +90,13 @@ body {
     height: 80vh;
     width: 42%; }
   .main-image #video {
-    color: white;
+    color: grey;
     font-family: 'Lora', serif;
-    transition: all 1s; }
+    transition: all 1s;
+    font-size: 1.3em; }
     .main-image #video:hover {
-      font-size: 1.1em;
+      font-size: 1.29em;
+      color: lightgrey;
       text-decoration: none; }
 
 .logo {
@@ -107,9 +110,17 @@ body {
   .main-image {
     width: 100%; }
     .main-image img {
-      width: 80%; } }
+      width: 60%; } }
 
 @media screen and (max-width: 700px) {
+  .main-image {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden; }
+    .main-image img {
+      width: 80%; } }
+
+@media screen and (max-width: 400px) {
   .main-image {
     width: 100%;
     margin: 0 auto;
@@ -196,7 +207,8 @@ body {
       position: relative;
       top: -10px;
       padding: 5px 50px;
-      z-index: 1010; }
+      z-index: 1010;
+      left: -5px; }
     .footer .social i, .push-large .social i {
       font-size: 2em;
       color: grey; }
@@ -222,7 +234,7 @@ body {
 @media (max-width: 700px) {
   .footer .social li {
     top: -10px;
-    left: 5px;
+    left: -20px;
     padding: 0px 34px; } }
 
 .col-xs-12, col-sm-4 {
