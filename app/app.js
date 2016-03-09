@@ -26,6 +26,10 @@ angular.module('App', ['ui.router'])
       url: "/contact",
       templateUrl: 'app/states/contact.html'
     })
+    .state('video', {
+      url: "/video",
+      templateUrl: 'app/states/video.html'
+    })
   })
 
   .controller('PhotoCtrl', function($http) {

@@ -29,7 +29,7 @@
   line-height: 25px;
   width: 100%;
   z-index: 100;
-  font-family: 'Archivo Narrow', sans-serif; }
+  font-family: 'Lora', serif; }
   .nav ul {
     display: block;
     list-style: none; }
@@ -43,10 +43,10 @@
         transition: padding 0.5s; }
       .nav ul li .active {
         border-bottom: red 1px solid;
-        padding: 1px 16px; }
+        padding: 1px 13px; }
   .nav #logo {
     position: absolute;
-    margin: 4px 10px 1px -21px;
+    margin: 4px 10px 1px -23px;
     width: 100%; }
     .nav #logo img {
-      width: 100px; }
+      width: 120px; }

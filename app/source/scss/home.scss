@@ -8,7 +8,16 @@
   z-index:999;
   img {
     height:80vh;
-    width:40%;
+    width:42%;
+  }
+  #video {
+    color:white;
+    font-family: 'Lora', serif;
+    transition: all 1s;
+    &:hover {
+      font-size:1.1em;
+      text-decoration: none;
+    }
   }
 }
 .logo {

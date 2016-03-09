@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url(https://fonts.googleapis.com/css?family=Archivo+Narrow);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 body {
   background: #292526;
   text-align: center;
@@ -42,7 +43,7 @@ body {
   line-height: 25px;
   width: 100%;
   z-index: 100;
-  font-family: 'Archivo Narrow', sans-serif; }
+  font-family: 'Lora', serif; }
   .nav ul {
     display: block;
     list-style: none; }
@@ -56,13 +57,13 @@ body {
         transition: padding 0.5s; }
       .nav ul li .active {
         border-bottom: red 1px solid;
-        padding: 1px 16px; }
+        padding: 1px 13px; }
   .nav #logo {
     position: absolute;
-    margin: 4px 10px 1px -21px;
+    margin: 4px 10px 1px -23px;
     width: 100%; }
     .nav #logo img {
-      width: 100px; }
+      width: 120px; }
 
 @keyframes show {
   0% {
@@ -86,7 +87,14 @@ body {
   z-index: 999; }
   .main-image img {
     height: 80vh;
-    width: 40%; }
+    width: 42%; }
+  .main-image #video {
+    color: white;
+    font-family: 'Lora', serif;
+    transition: all 1s; }
+    .main-image #video:hover {
+      font-size: 1.1em;
+      text-decoration: none; }
 
 .logo {
   width: 100%;
@@ -138,6 +146,15 @@ body {
 .page-heading {
   margin-bottom: 50px; }
 
+.bio {
+  width: 100%; }
+  .bio .about {
+    width: 65%;
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    margin: 0 auto; }
+
 .information {
   width: 100%; }
   .information a {
@@ -149,14 +166,6 @@ body {
 @media (max-width: 700px) {
   .information {
     width: 100%; } }
-
-.bio {
-  width: 100%; }
-  .bio .about {
-    width: 65%;
-    font-size: 1.2em;
-    line-height: 40px;
-    margin: 0 auto; }
 
 @keyframes show {
   0% {
@@ -198,11 +207,17 @@ body {
       opacity: 0;
       animation: from-left 2s forwards;
       animation-delay: 1s; }
-  .footer .copy, .push-large .copy {
+  .footer a.copy, .push-large a.copy {
     color: grey;
-    padding: 0;
-    font-size: 0.9em;
-    font-family: helvetica; }
+    padding: 20px;
+    opacity: 0.5;
+    font-size: 0.3em;
+    font-family: helvetica;
+    transition: color 0.5s;
+    text-decoration: none; }
+    .footer a.copy:hover, .push-large a.copy:hover {
+      text-decoration: none;
+      color: lightgrey; }
 
 @media (max-width: 700px) {
   .footer .social li {

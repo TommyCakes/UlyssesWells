@@ -32,12 +32,19 @@ height: 3em;
          animation-delay:1s;
        }
    }
-   .copy {
+   a.copy {
        color:grey;
        //text-align: left;
-       padding:0;
-       font-size:0.9em;
+       padding:20px;
+       opacity:0.5;
+       font-size:0.3em;
        font-family:helvetica;
+       transition:color 0.5s;
+       text-decoration: none;
+       &:hover {
+         text-decoration: none;
+         color:lightgrey;
+       }
      }
 }
 

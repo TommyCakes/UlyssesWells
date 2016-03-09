@@ -20,7 +20,14 @@
   z-index: 999; }
   .main-image img {
     height: 80vh;
-    width: 40%; }
+    width: 42%; }
+  .main-image #video {
+    color: white;
+    font-family: 'Lora', serif;
+    transition: all 1s; }
+    .main-image #video:hover {
+      font-size: 1.1em;
+      text-decoration: none; }
 
 .logo {
   width: 100%;
