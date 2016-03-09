@@ -1,0 +1,11 @@
+.information {
+  width: 100%; }
+  .information a {
+    color: white;
+    text-decoration: none; }
+    .information a:hover {
+      color: #d3d3d3; }
+
+@media (max-width: 700px) {
+  .information {
+    width: 100%; } }

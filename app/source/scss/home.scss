@@ -1,3 +1,5 @@
+@import 'animations';
+
 .main-image {
   width:100%;
   height:100%;
@@ -39,12 +41,4 @@
 
 .push-small {
   height: 1em;
-}
-
-
-// animations
-
-@keyframes show {
-  0% { opacity: 0}
-  100% { opacity: 1}
 }

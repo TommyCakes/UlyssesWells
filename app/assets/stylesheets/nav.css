@@ -1,13 +1,19 @@
 @media (max-width: 700px) {
   .nav {
     position: absolute;
-    font-size: 1em;
+    font-size: 12px;
     right: 7px; }
     .nav ul {
-      padding: 0px 15px; }
+      padding: 20px 15px; }
       .nav ul li a.active {
         border-bottom: none;
-        padding: 0px; } }
+        padding: 0px; }
+      .nav ul #logo {
+        position: absolute;
+        margin: -15px 10px 20px -18px;
+        width: 100%; }
+        .nav ul #logo img {
+          width: 60px; } }
 
 @media (min-width: 700px) {
   .nav {
@@ -17,8 +23,9 @@
   position: fixed;
   margin: 0 auto;
   float: center;
+  height: 80px;
   top: 0px;
-  transition: background 1s;
+  transition: background 1.5s;
   line-height: 25px;
   width: 100%;
   z-index: 100;
@@ -37,3 +44,9 @@
       .nav ul li .active {
         border-bottom: red 1px solid;
         padding: 1px 16px; }
+  .nav #logo {
+    position: absolute;
+    margin: 4px 10px 1px -21px;
+    width: 100%; }
+    .nav #logo img {
+      width: 100px; }

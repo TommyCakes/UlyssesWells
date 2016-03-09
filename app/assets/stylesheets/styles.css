@@ -1,24 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url(https://fonts.googleapis.com/css?family=Archivo+Narrow);
 body {
-  background: #2A2627;
+  background: #292526;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: white;
   margin-top: -30px; }
   body .push-small {
     height: 2em; }
+  body .push-xl {
+    height: 10em; }
 
 @media (max-width: 700px) {
   .nav {
     position: absolute;
-    font-size: 1em;
+    font-size: 12px;
     right: 7px; }
     .nav ul {
-      padding: 0px 15px; }
+      padding: 20px 15px; }
       .nav ul li a.active {
         border-bottom: none;
-        padding: 0px; } }
+        padding: 0px; }
+      .nav ul #logo {
+        position: absolute;
+        margin: -15px 10px 20px -18px;
+        width: 100%; }
+        .nav ul #logo img {
+          width: 60px; } }
 
 @media (min-width: 700px) {
   .nav {
@@ -28,8 +36,9 @@ body {
   position: fixed;
   margin: 0 auto;
   float: center;
+  height: 80px;
   top: 0px;
-  transition: background 1s;
+  transition: background 1.5s;
   line-height: 25px;
   width: 100%;
   z-index: 100;
@@ -48,6 +57,18 @@ body {
       .nav ul li .active {
         border-bottom: red 1px solid;
         padding: 1px 16px; }
+  .nav #logo {
+    position: absolute;
+    margin: 4px 10px 1px -21px;
+    width: 100%; }
+    .nav #logo img {
+      width: 100px; }
+
+@keyframes show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .main-image {
   width: 100%;
@@ -83,12 +104,6 @@ body {
 .push-small {
   height: 1em; }
 
-@keyframes show {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
 .gallery {
   font-family: 'Archivo Narrow', sans-serif;
   font-weight: 500;
@@ -117,9 +132,6 @@ body {
 
 .information {
   width: 100%; }
-  .information img {
-    width: 80%;
-    height: 400px; }
   .information a {
     color: white;
     text-decoration: none; }
@@ -128,15 +140,13 @@ body {
 
 @media (max-width: 700px) {
   .information {
-    width: 100%; }
-    .information img {
-      width: 100%;
-      height: 200px; } }
+    width: 100%; } }
 
 .bio {
   width: 100%; }
   .bio .about {
     width: 65%;
+    font-size: 1.2em;
     line-height: 40px;
     margin: 0 auto; }
 

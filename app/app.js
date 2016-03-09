@@ -30,17 +30,15 @@ angular.module('App', ['ui.router'])
 
   .controller('PhotoCtrl', function($http) {
 
-   var scroll_start = 0;
-   var startchange = $('#top');
-   var offset = startchange.offset();
-  if (startchange.length){
-   $(document).scroll(function() {
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $(".nav").css('background-color', '#2A2627');
-       }
-   });
-  }
+    $(document).ready(function(){
+      $(window).scroll(function() { // check if scroll event happened
+        if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+          $(".nav").css("background-color", "#201d1e"); // if yes, then change the color of class "navbar-fixed-top" to #2A2627
+        } else {
+          $(".nav").css("background-color", "transparent"); // if not, change it back to transparent
+        }
+      });
+    });
 
     var self = this;
     var self = this;
