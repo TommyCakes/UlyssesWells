@@ -1,11 +1,18 @@
-.information {
+.contact {
   width:100%;
+  font-family: 'Lora', serif;
+  font-size:1.2em;
+  animation: show 1s;
   a {
     color:white;
     text-decoration:none;
     &:hover {
       color:#d3d3d3;
     }
+  }
+  #subscribe-now {
+    font-family: 'Lora', serif;
+    font-weight:400;
   }
 }
 

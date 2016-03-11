@@ -4,12 +4,26 @@
   100% {
     opacity: 1; } }
 
+@keyframes hide {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 @keyframes from-left {
   0% {
     transform: translateX(-10px);
     opacity: 0; }
   100% {
     transform: translateX(10px);
+    opacity: 1; } }
+
+@keyframes shift-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0; }
+  100% {
+    transform: translateY(10px);
     opacity: 1; } }
 
 .wrapper {
@@ -31,14 +45,21 @@
       left: -5px; }
     .footer .social i, .push-large .social i {
       font-size: 2em;
-      color: grey; }
+      color: grey;
+      opacity: 0;
+      animation-delay: 2s; }
       .footer .social i:hover, .push-large .social i:hover {
         transition: color 1s;
         color: lightblue; }
-    .footer .social i:nth-last-child(1), .push-large .social i:nth-last-child(1) {
-      opacity: 0;
+    .footer .social .fa-facebook, .push-large .social .fa-facebook {
       animation: from-left 2s forwards;
       animation-delay: 1s; }
+    .footer .social .fa-twitter, .push-large .social .fa-twitter {
+      animation: from-left 2s forwards;
+      animation-delay: 1.5s; }
+    .footer .social .fa-instagram, .push-large .social .fa-instagram {
+      animation: from-left 2s forwards;
+      animation-delay: 2s; }
   .footer a.copy, .push-large a.copy {
     color: grey;
     padding: 20px;
@@ -54,5 +75,12 @@
 @media (max-width: 700px) {
   .footer .social li {
     top: -10px;
+    left: -20px;
+    padding: 0px 34px; } }
+
+@media screen and (max-width: 400px) {
+  .footer .social li {
+    top: -100px;
+    position: relative;
     left: -20px;
     padding: 0px 34px; } }

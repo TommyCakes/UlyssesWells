@@ -1,5 +1,8 @@
+@import "animations";
+
 .bio {
   width:100%;
+  animation: show 1s;
   .about {
     width:65%;
     font-family: 'Lora', serif;

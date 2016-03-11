@@ -1,7 +1,8 @@
 .contact {
   width: 100%;
   font-family: 'Lora', serif;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  animation: show 1s; }
   .contact a {
     color: white;
     text-decoration: none; }

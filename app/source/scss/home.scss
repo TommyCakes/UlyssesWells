@@ -6,30 +6,30 @@
   max-height:100vh;
   animation: show 3s;
   z-index:999;
-  img {
-    height:80vh;
-    width:42%;
-  }
-  #video {
-    color:grey;
-    font-family: 'Lora', serif;
-    transition: all 1s;
-    font-size:1.3em;
-    &:hover {
-      font-size:1.29em;
-      color:lightgrey;
-      text-decoration: none;
+    img {
+      height:80vh;
+      width:42%;
+    }
+}
+
+#video {
+  animation: shift-up 2s forwards;
+  opacity: 0;
+  a {
+  color:grey;
+  font-family: 'Lora', serif;
+  font-size:1.3em;
+  transition: all 1s;
+  text-decoration: none;
+  font-size:1.3em;
+  &:hover {
+    font-size:1.29em;
+    color:lightgrey;
+    text-decoration: none;
+      }
     }
   }
-}
-.logo {
-  width:100%;
-  position:absolute;
-  top:300px;
-  img {
-    width:30%;
-  }
-}
+
 @media screen and (max-width:950px) {
   .main-image {
     width:100%;
@@ -53,10 +53,19 @@
   .main-image {
     width:100%;
     margin:0 auto;
+    height:90vh;
     overflow:hidden;
     img {
       width:100%;
     }
+  }
+  #video {
+    color:grey;
+    position:relative;
+    top:-70px;
+    font-family: 'Lora', serif;
+    transition: all 1s;
+    font-size:1.3em;
   }
 }
 

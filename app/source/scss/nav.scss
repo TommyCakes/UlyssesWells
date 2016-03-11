@@ -1,4 +1,4 @@
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .nav {
       position: absolute;
       font-size: 12px;
@@ -26,9 +26,15 @@
 
 @media (min-width: 700px) {
   .nav {
-    right:30px;
+    right:0px;
+    ul {
+      right:30px;
+      position: relative;
+    }
   }
 }
+
+
 .nav {
   position: fixed;
   margin:0 auto;

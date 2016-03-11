@@ -21,16 +21,25 @@ height: 3em;
         i {
            font-size:2em;
            color:grey;
+           opacity: 0;
+           //animation: from-left 2s forwards;
+           animation-delay:2s;
          &:hover {
            transition: color 1s;
            color:lightblue;
          }
        }
-       i:nth-last-child(1) {
-         opacity: 0;
-         //color:white;
-         animation: from-left 2s forwards;
-         animation-delay:1s;
+       .fa-facebook{
+        animation: from-left 2s forwards;
+        animation-delay:1s;
+       }
+       .fa-twitter{
+        animation: from-left 2s forwards;
+        animation-delay:1.5s;
+       }
+       .fa-instagram{
+        animation: from-left 2s forwards;
+        animation-delay:2s;
        }
    }
    a.copy {
@@ -54,6 +63,19 @@ height: 3em;
     .social {
       li {
       top:-10px;
+      left:-20px;
+      padding:0px 34px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:400px) {
+  .footer {
+    .social {
+      li {
+      top:-100px;
+      position: relative;
       left:-20px;
       padding:0px 34px;
       }
