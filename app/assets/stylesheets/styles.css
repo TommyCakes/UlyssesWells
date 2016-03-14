@@ -12,36 +12,13 @@ body {
   body .push-xl {
     height: 10em; }
 
-@media (max-width: 800px) {
-  .nav {
-    position: absolute;
-    font-size: 12px;
-    right: 7px; }
-    .nav ul {
-      padding: 20px 15px; }
-      .nav ul li a.active {
-        border-bottom: none;
-        padding: 0px; }
-      .nav ul #logo {
-        position: absolute;
-        margin: 8px 10px 20px -18px;
-        width: 100%; }
-        .nav ul #logo img {
-          width: 60px; } }
-
-@media (min-width: 700px) {
-  .nav {
-    right: 0px; }
-    .nav ul {
-      right: 30px;
-      position: relative; } }
-
 .nav {
   position: fixed;
   margin: 0 auto;
   float: center;
   height: 80px;
   top: 0px;
+  right: 0px;
   transition: background 1.2s;
   line-height: 25px;
   width: 100%;
@@ -49,7 +26,9 @@ body {
   font-family: 'Lora', serif; }
   .nav ul {
     display: block;
-    list-style: none; }
+    list-style: none;
+    right: 30px;
+    position: relative; }
     .nav ul li {
       display: inline-block;
       margin-top: 15px; }
@@ -67,7 +46,35 @@ body {
     width: 100%;
     top: -10px; }
     .nav #logo img {
-      width: 120px; }
+      width: 140px; }
+
+@media (max-width: 800px) {
+  .nav {
+    position: absolute;
+    font-size: 12px;
+    right: -20px; }
+    .nav ul {
+      padding: 20px 15px; }
+      .nav ul li a.active {
+        border-bottom: none;
+        padding: 0px; }
+      .nav ul #logo {
+        position: absolute;
+        margin: 8px 10px 20px -18px;
+        width: 100%; }
+        .nav ul #logo img {
+          width: 80px; } }
+
+@media (max-width: 450px) {
+  .nav ul {
+    position: relative; }
+    .nav ul #logo {
+      position: absolute;
+      top: 0px;
+      margin: 8px 10px 20px -18px;
+      width: 100%; }
+      .nav ul #logo img {
+        width: 60px; } }
 
 @keyframes show {
   0% {
@@ -147,10 +154,10 @@ body {
   #video {
     color: grey;
     position: relative;
-    top: -70px;
+    top: -90px;
     font-family: 'Lora', serif;
     transition: all 1s;
-    font-size: 1.3em; } }
+    font-size: 1em; } }
 
 .push-small {
   height: 1em; }
