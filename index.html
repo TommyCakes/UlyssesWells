@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name=viewport content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="app/assets/stylesheets/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <title>UlyssesWells</title>
 </head>
 <body ng-controller="PhotoCtrl as photo">
 
 <div class="container">
-  <div class="nav">
+  <!-- <div class="nav">
     <ul>
       <div id="logo">
         <img src="app/img/logo.png" alt="">
@@ -45,29 +45,32 @@
           <li><a class="contact" ui-sref="contact" ui-sref-active="active">CONTACT</a></li>
         </div>
       </div>
-    </ul>
+    </ul> -->
+  </div>
+
+  <div class="row">
+    <div class="footer">
+      <ul class="social">
+        <div class="col-sm-2 col-xs-1"></div>
+          <div class="col-sm-2 col-xs-2">
+            <li><a href="https://www.facebook.com/UlyWells/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          </div>
+          <div class="col-sm-2 col-xs-2">
+            <li><a href="https://twitter.com/ulysses_wells" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          </div>
+          <div class="col-sm-2 col-xs-2">
+            <li><a href="https://www.instagram.com/ulysses_wells/" target="_blank"><i class="fa fa-instagram"></a></i></li>
+          </div>
+          <div class="col-sm-2 col-xs-2">
+            <li><a href="https://www.instagram.com/ulysses_wells/" target="_blank"><i class="fa fa-soundcloud"></a></i></li>
+          </div>
+          <div class="col-sm-2 col-xs-2"></div>
+      </ul>
+    </div>
   </div>
 </div>
 
-    <div class="push-small"></div>
-    <section id="mid"></section>
-<div ui-view></div>
-
-<div class="wrapper">
-        <div class="push-small"></div>
-        </div>
-        <div class="footer">
-          <ul class="social">
-            <p>
-              <li><a href="https://www.facebook.com/UlyWells/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/ulysses_wells" target="_blank"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.instagram.com/ulysses_wells/" target="_blank"><i class="fa fa-instagram"></a></i></li>
-            </p>
-          </ul>
-            <a href="http://tomwarhurst.com/#/" target="_blank" class='copy'>
-              <p>&copy Tom Warhurst 2016</p>
-            </a>
-        </div>
+<!-- <div ui-view></div> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 <script src="angular.min.js"></script>
