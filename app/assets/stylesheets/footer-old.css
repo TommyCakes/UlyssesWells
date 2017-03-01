@@ -1,0 +1,86 @@
+@keyframes show {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes hide {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes from-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0; }
+  100% {
+    transform: translateX(10px);
+    opacity: 1; } }
+
+@keyframes shift-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0; }
+  100% {
+    transform: translateY(10px);
+    opacity: 1; } }
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em; }
+
+.footer, .push-large {
+  height: 3em; }
+  .footer .social, .push-large .social {
+    display: inline; }
+    .footer .social li, .push-large .social li {
+      display: inline-block;
+      position: relative;
+      top: -10px;
+      padding: 5px 50px;
+      z-index: 1010;
+      left: -5px; }
+    .footer .social i, .push-large .social i {
+      font-size: 2em;
+      color: grey;
+      opacity: 0;
+      animation-delay: 2s; }
+      .footer .social i:hover, .push-large .social i:hover {
+        transition: color 1s;
+        color: lightblue; }
+    .footer .social .fa-facebook, .push-large .social .fa-facebook {
+      animation: from-left 2s forwards;
+      animation-delay: 1s; }
+    .footer .social .fa-twitter, .push-large .social .fa-twitter {
+      animation: from-left 2s forwards;
+      animation-delay: 1.5s; }
+    .footer .social .fa-instagram, .push-large .social .fa-instagram {
+      animation: from-left 2s forwards;
+      animation-delay: 2s; }
+  .footer a.copy, .push-large a.copy {
+    color: grey;
+    padding: 20px;
+    opacity: 0.5;
+    font-size: 0.3em;
+    font-family: helvetica;
+    transition: color 0.5s;
+    text-decoration: none; }
+    .footer a.copy:hover, .push-large a.copy:hover {
+      text-decoration: none;
+      color: lightgrey; }
+
+@media (max-width: 700px) {
+  .footer .social li {
+    top: -10px;
+    left: -20px;
+    padding: 0px 34px; } }
+
+@media screen and (max-width: 400px) {
+  .footer .social li {
+    top: -100px;
+    position: relative;
+    left: -20px;
+    padding: 0px 34px; } }

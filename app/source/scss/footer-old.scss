@@ -1,0 +1,84 @@
+@import "animations";
+
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+.footer, .push-large {
+height: 3em;
+  .social {
+    display:inline;
+      li {
+      display:inline-block;
+      position: relative;
+      top:-10px;
+      padding:5px 50px;
+      z-index:1010;
+      left:-5px;
+      }
+        i {
+           font-size:2em;
+           color:grey;
+           opacity: 0;
+           //animation: from-left 2s forwards;
+           animation-delay:2s;
+         &:hover {
+           transition: color 1s;
+           color:lightblue;
+         }
+       }
+       .fa-facebook{
+        animation: from-left 2s forwards;
+        animation-delay:1s;
+       }
+       .fa-twitter{
+        animation: from-left 2s forwards;
+        animation-delay:1.5s;
+       }
+       .fa-instagram{
+        animation: from-left 2s forwards;
+        animation-delay:2s;
+       }
+   }
+   a.copy {
+       color:grey;
+       //text-align: left;
+       padding:20px;
+       opacity:0.5;
+       font-size:0.3em;
+       font-family:helvetica;
+       transition:color 0.5s;
+       text-decoration: none;
+       &:hover {
+         text-decoration: none;
+         color:lightgrey;
+       }
+     }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    .social {
+      li {
+      top:-10px;
+      left:-20px;
+      padding:0px 34px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:400px) {
+  .footer {
+    .social {
+      li {
+      top:-100px;
+      position: relative;
+      left:-20px;
+      padding:0px 34px;
+      }
+    }
+  }
+}

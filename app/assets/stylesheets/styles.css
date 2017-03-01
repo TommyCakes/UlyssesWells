@@ -2,7 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Archivo+Narrow);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 body {
-  background: #2A2627;
+  background: url("../../img/uly-new.jpg") no-repeat center center fixed;
+  background-size: cover;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: white;
@@ -300,64 +301,48 @@ body {
     transform: translateY(10px);
     opacity: 1; } }
 
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -4em; }
-
-.footer, .push-large {
-  height: 3em; }
-  .footer .social, .push-large .social {
-    display: inline; }
-    .footer .social li, .push-large .social li {
-      display: inline-block;
-      position: relative;
-      top: -10px;
-      padding: 5px 50px;
-      z-index: 1010;
-      left: -5px; }
-    .footer .social i, .push-large .social i {
-      font-size: 2em;
-      color: grey;
-      opacity: 0;
-      animation-delay: 2s; }
-      .footer .social i:hover, .push-large .social i:hover {
-        transition: color 1s;
-        color: lightblue; }
-    .footer .social .fa-facebook, .push-large .social .fa-facebook {
+.footer {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center; }
+  .footer ul {
+    list-style: none; }
+    .footer ul li {
+      display: inline;
+      font-size: 1.2em; }
+      .footer ul li i {
+        font-size: 2em;
+        color: grey;
+        opacity: 0;
+        animation-delay: 2s; }
+        .footer ul li i:hover {
+          transition: color 1s;
+          color: lightblue; }
+    .footer ul .fa-facebook {
       animation: from-left 2s forwards;
       animation-delay: 1s; }
-    .footer .social .fa-twitter, .push-large .social .fa-twitter {
+    .footer ul .fa-twitter {
       animation: from-left 2s forwards;
       animation-delay: 1.5s; }
-    .footer .social .fa-instagram, .push-large .social .fa-instagram {
+    .footer ul .fa-instagram {
       animation: from-left 2s forwards;
       animation-delay: 2s; }
-  .footer a.copy, .push-large a.copy {
+    .footer ul .fa-soundcloud {
+      animation: from-left 2s forwards;
+      animation-delay: 2s; }
+  .footer a.copy {
     color: grey;
-    padding: 20px;
     opacity: 0.5;
     font-size: 0.3em;
     font-family: helvetica;
     transition: color 0.5s;
     text-decoration: none; }
-    .footer a.copy:hover, .push-large a.copy:hover {
+    .footer a.copy:hover {
       text-decoration: none;
       color: lightgrey; }
-
-@media (max-width: 700px) {
-  .footer .social li {
-    top: -10px;
-    left: -20px;
-    padding: 0px 34px; } }
-
-@media screen and (max-width: 400px) {
-  .footer .social li {
-    top: -100px;
-    position: relative;
-    left: -20px;
-    padding: 0px 34px; } }
 
 .col-xs-12, col-sm-4 {
   padding: 0px; }
