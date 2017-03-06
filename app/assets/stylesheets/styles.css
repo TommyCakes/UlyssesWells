@@ -333,6 +333,9 @@ body {
     .footer ul .fa-soundcloud {
       animation: from-left 2s forwards;
       animation-delay: 2s; }
+    .footer ul .fa-spotify {
+      animation: from-left 2s forwards;
+      animation-delay: 2s; }
   .footer a.copy {
     color: grey;
     opacity: 0.5;
